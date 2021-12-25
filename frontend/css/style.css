@@ -95,3 +95,111 @@
   letter-spacing: -0.015em;
   padding: 0 24px 0 0;
 }
+
+.header-menu {
+  position: absolute;
+  width: 100%;
+  height: 102px;
+  left: 0px;
+  top: 49px;
+
+  background: #ffffff;
+  /* background: #851e1e; */
+}
+
+.header-menu-logo {
+  position: absolute;
+  width: 161px;
+  height: 54px;
+  left: 80px;
+  top: 27px;
+  background: url("./../img/logo_pintow.svg");
+}
+
+.header-lista-itens {
+  position: absolute;
+  left: 252px;
+  top: 42px;
+}
+
+.header-lista-itens li {
+  display: inline;
+  margin: 0 0 0 70px;
+}
+
+.header-lista-itens a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #3b4044;
+}
+
+.header-lista-buttons-box {
+  position: absolute;
+  left: 1078px;
+  top: 43px;
+}
+
+/* .header-lista-buttons {} */
+
+.header-lista-buttons li {
+  display: inline;
+  left: -29.73%;
+  right: 42.16%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #ffffff;
+  margin: 0 0 0 15px;
+  /* Actionable Item */
+  padding: 13px;
+  border: 1px solid #18a0fb;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.header-lista-buttons a {
+  display: inline-block;
+  text-decoration: none;
+  left: 81.01%;
+  right: 11.46%;
+  top: 43.14%;
+  bottom: 43.14%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #18a0fb;
+}
+
+.header-lista-buttons-ancora-1 {
+  padding: 0 0 0 21px;
+}
+
+.header-lista-imagem-ancora-1 {
+  position: absolute;
+  left: 40.42%;
+  top: -39.73%;
+}
+
+.header-lista-buttons-ancora-2 {
+  padding: 0 0 0 34px;
+}
+
+.header-lista-imagem-ancora-2 {
+  position: absolute;
+  left: 78.42%;
+  top: -35.73%;
+}

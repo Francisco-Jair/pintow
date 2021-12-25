@@ -1,4 +1,6 @@
-{% extends "base.html" %} {% load static %} {% block content %}
+{% extends "base.html" %} 
+{% load static %} 
+{% block content %}
 
 <header class="header-home">
   <div class="header-superior">
@@ -9,14 +11,51 @@
 
     <div class="header-dropdown-cidade">
       <!-- Forms Para a seleção -->
-      <form action="{% url 'home' %}" method="post">
-        {% csrf_token %} {{ cidadeForms.as_p }}
-      </form>
+      <form method="post">{% csrf_token %} {{ cidadeForms.as_p }}</form>
       <!-- para resolver e só colocar onchange="this.form.submit();" no select -->
     </div>
   </div>
+
+  <div class="header-menu">
+    <div class="header-menu-logo"></div>
+    <nav class="header-lista-itens">
+      <ul>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Simulador</a></li>
+        <li><a href="#">Calculadora</a></li>
+        <li><a href="#">Dúvidas?</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-lista-buttons-box">
+      <ul class="header-lista-buttons">
+        <li><a href="#">Comprar pelo Whats</a></li>
+        <li>
+          <a href="#" class="header-lista-buttons-ancora-1">
+            <img
+              src="{% static 'img/usuario_icon.svg' %}"
+              class="header-lista-imagem-ancora-1"
+            />
+            Entrar ou Registra
+          </a>
+        </li>
+        <li>
+          <a href="#" class="header-lista-buttons-ancora-2">
+            <img
+              src="{% static 'img/caminhao-de-mao.svg' %}"
+              class="header-lista-imagem-ancora-2"
+            />
+            Carinho</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
-{% endblock %} {% block extra_media %}
+{% endblock %} 
+
+<!-- Bloco que adiciona o envio de formulario ao escolher uma cidade -->
+{% block extra_media %}
 <script>
   $(function () {
     document
