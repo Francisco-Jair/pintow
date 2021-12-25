@@ -1,0 +1,97 @@
+/* CSS da página Home */
+/* .header-home{} */
+
+.header-superior {
+  position: absolute;
+  width: 100%;
+  height: 49px;
+  left: 0px;
+  top: 0px;
+
+  background: #f8f8f8;
+}
+
+/* .header-whats{} */
+
+.header-whats i {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 80px;
+  top: 19px;
+
+  background: url("./../img/whatsapp_icon.svg");
+}
+
+.text-header-whats {
+  position: absolute;
+  width: 129px;
+  height: 27px;
+  left: 103px;
+  top: 15px;
+
+  font-family: Titillium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #b89b9b;
+}
+
+.header-dropdown-cidade {
+  position: absolute;
+  width: 272px;
+  height: 24px;
+  left: 1276px;
+  top: 12px;
+
+  background: #ffffff;
+  border-radius: 7px;
+}
+
+.header-dropdown-cidade p {
+  position: absolute;
+  width: 218px;
+  height: 27px;
+  left: 8px;
+  top: -1px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #b89b9b;
+}
+
+.header-dropdown-cidade select {
+  position: absolute;
+  width: 63%;
+  height: 31px;
+  left: 127px;
+  top: -1px;
+  appearance: none;
+  background: url("./../img/seta_baixo.svg") 96% / 15% no-repeat;
+  border: none;
+  color: #8c71c5;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  padding: 0 24px 0 0;
+}

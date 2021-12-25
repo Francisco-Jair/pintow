@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<header class="header-home">
+  <div class="header-superior">
+    <div class="header-whats">
+      <i></i>
+      <p class="text-header-whats">Atendimento WhatsApp</p>
+    </div>
+
+    <div class="header-dropdown-cidade">
+      <!-- Forms Para a seleção -->
+      <form action="{% url 'home' %}" method="post">
+        {% csrf_token %} {{ cidadeForms.as_p }}
+      </form>
+      <!-- para resolver e só colocar onchange="this.form.submit();" no select -->
+    </div>
+  </div>
+</header>
+{% endblock %} {% block extra_media %}
+<script>
+  $(function () {
+    document
+      .getElementById("id_cidades")
+      .addEventListener("change", function () {
+        this.form.submit();
+      });
+  });
+</script>
+{% endblock %}

@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+class Cidades(models.Model):
+    cidade = models.CharField("Cidade", max_length=20)
+    estado = models.CharField("Estado", max_length=20)
+    siglaEstado = models.CharField("Sigla do Estado", max_length=3)
+    
+    
