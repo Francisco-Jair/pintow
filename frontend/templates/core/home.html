@@ -1,6 +1,4 @@
-{% extends "base.html" %} 
-{% load static %} 
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <header class="header-home">
   <div class="header-superior">
@@ -52,7 +50,12 @@
     </div>
   </div>
 </header>
-{% endblock %} 
+<main class="container-main">
+  <section class="container-main-section-cor"></section>
+
+  <section class="container-main-barra-option"></section>
+</main>
+{% endblock %}
 
 <!-- Bloco que adiciona o envio de formulario ao escolher uma cidade -->
 {% block extra_media %}

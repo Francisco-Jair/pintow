@@ -203,3 +203,21 @@
   left: 78.42%;
   top: -35.73%;
 }
+
+.container-main {
+  background: #e5e5e5;
+}
+
+.container-main-section-cor {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  left: -1px;
+  top: 151px;
+
+  background: #2f72a3;
+}
+
+.container-main-barra-option {
+  width: 100%;
+}
