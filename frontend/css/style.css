@@ -27,7 +27,7 @@
   position: absolute;
   width: 129px;
   height: 27px;
-  left: 103px;
+  left: 98px;
   top: 15px;
 
   font-family: Titillium;
@@ -40,7 +40,8 @@
   text-align: center;
   letter-spacing: -0.015em;
 
-  color: #b89b9b;
+  color: #B89B9B;
+
 }
 
 .header-dropdown-cidade {
@@ -120,6 +121,12 @@
   position: absolute;
   left: 252px;
   top: 42px;
+}
+
+.list-categorias {
+  position: absolute;
+  left: 252px;
+  top: 716px;
 }
 
 .header-lista-itens li {
@@ -220,4 +227,37 @@
 
 .container-main-barra-option {
   width: 100%;
+}
+
+.category-decorative-effects {
+  position: absolute;
+  width: 100px;
+  height: 92px;
+  left: 325px;
+  top: 714px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  background: url("./../img/efeito-decorativos.svg");
+}
+
+.text-decorative-effects {
+  position: absolute;
+  width: 111px;
+  height: 15px;
+  left: 320px;
+  top: 832px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #000000;
 }

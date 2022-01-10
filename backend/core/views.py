@@ -18,7 +18,7 @@ def home(request):
         formulario = CidadeForms()
 
     context = {
-        "title" : "Pitow - Home",
+        "title" : "Pintow - Home",
         # "cidades" : Cidades.objects.all(),
         "cidadeForms" : formulario
     }
