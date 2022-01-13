@@ -1,8 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
 <header class="header-home">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Titillium' rel='stylesheet'>
+
   <div class="header-superior">
     <div class="header-whats">
       <i></i>
@@ -50,19 +49,7 @@
 </header>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<main class="container-main">
+<!-- <main class="container-main">
   <section class="container-main-section-cor"></section>
 
   <section class="container-main-barra-option">
@@ -75,14 +62,74 @@
       </ul>
     </nav>
   </section>
-</main>
+</main> -->]
+<div class="container">
+  <footer class="row py-5 my-5 border-top">
+      <div class="col">
+        <h5 style="font-family: Montserrat; font-style: normal; font-weight: 500; font-size: 18px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Atendimento</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Acompanhar Pedido</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Perguntas Frequentes</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Atendimento pelo WhatsApp</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Compre pelo Instagram</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Tudo sobre nossas Tintas</a></li>
+        </ul>
+      </div>
 
+      <div class="col">
+        <h5>Como Trabalhamos</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Como Comprar</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Pagamento</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Termos e condições de uso do site</a>
+          </li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Entrega</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Troca e devolução</a></li>
+        </ul>
+      </div>
 
-<footer>
+      <div class="col ">
+        <h5>Pintow para Você</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Compra Planejada</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Ofertas Especiais</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Pacote Reforma</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Lojas Parceiras</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Arquiteto Pintow</a></li>
+        </ul>
+      </div>
 
-  <div class="px-5">
-    <div class="row">
-      <div class="col-md-2">
+      <div class="col">
+        <h5 >Institucional</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Sobre a Pintow</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Nossa Experiência</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Imprensa</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Lojas Parceiras</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Ranking</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Cartelas</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Pisos</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Esmaltes</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Texturas</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Tintas</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Colors 20</a></li>
+        </ul>
+      </div>
+      <!-- <div class="col">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <img src="{% static 'img/logo pintow2.png' %}" alt="Pintow" class="img-fluid " style="max-width: 60%" />
+      </a>
+      <p class="text-muted">© 2021</p>
+    </div> -->
+  </footer>
+</div>
+<!-- <footer class="row row-cols-5 py-5 my-5">
+      <div class="col">
         <strong
           style="font-family: Montserrat; font-style: normal; font-weight: 500; font-size: 18px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Atendimento</strong>
         <a class="link-dark text-decoration-none" style="font-family: Montserrat;
@@ -107,7 +154,7 @@
           <p>Tudo sobre nossas tintas</p>
         </a>
       </div>
-      <div class="col-md-2">
+      <div class="col">
         <strong>Como Trabalhamos</strong>
         <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
           <p>Como Trabalhamos</p>
@@ -125,7 +172,7 @@
           <p>Troca e devolução</p>
         </a>
       </div>
-      <div class="col-md-2">
+      <div class="col">
         <strong>Pintow para Você</strong>
         <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
           <p>Compra Planejada</p>
@@ -143,7 +190,7 @@
           <p>Arquiteto Pintow</p>
         </a>
       </div>
-      <div class="col-md-2">
+      <div class="col">
         <strong>Institucional</strong>
         <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
           <p>Sobre a Pintow</p>
@@ -161,7 +208,7 @@
           <p>Ranking</p>
         </a>
       </div>
-      <div class="col-md-2">
+      <div class="col">
         <strong>Cartelas</strong>
         <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
           <p>Cartela Pisos</p>
@@ -208,8 +255,7 @@
       </div>
     </div>
   </div>
-  </div>
-</footer>
+</footer> -->
 {% endblock %}
 <!-- Bloco que adiciona o envio de formulario ao escolher uma cidade -->
 {% block extra_media %}
