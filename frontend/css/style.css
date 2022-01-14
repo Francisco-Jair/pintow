@@ -40,8 +40,7 @@
   text-align: center;
   letter-spacing: -0.015em;
 
-  color: #B89B9B;
-
+  color: #b89b9b;
 }
 
 .header-dropdown-cidade {
@@ -260,4 +259,16 @@
   letter-spacing: -0.015em;
 
   color: #000000;
+}
+
+.text-footer {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+
+  letter-spacing: -0.015em;
+
+  color: #38433f;
 }

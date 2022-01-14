@@ -1,55 +1,103 @@
 {% extends "base.html" %} {% load static %} {% block content %}
-
-<header class="header-home">
+<div class="container">
+  <!-- <header class="header-home">
 
   <div class="header-superior">
     <div class="header-whats">
       <i></i>
       <p class="text-header-whats">Atendimento WhatsApp</p>
     </div>
-
-    <div class="header-dropdown-cidade">
-      <!-- Forms Para a seleção -->
-      <form method="post">{% csrf_token %} {{ cidadeForms.as_p }}</form>
-      <!-- para resolver e só colocar onchange="this.form.submit();" no select -->
+    <div class="header-dropdown-cidade"> -->
+  <!-- Forms Para a seleção -->
+  <!-- <form method="post">{% csrf_token %} {{ cidadeForms.as_p }}</form>
+      </div>
     </div>
-  </div>
 
-  <div class="header-menu">
-    <div class="header-menu-logo"></div>
-    <ul>
-      <li>
-        <a href="#">
-          <img src="{% static 'img/efeito-decorativos.svg' %}" alt="Efeito Decorativos">
-        </a>
-      </li>
-      <li><img href="#">Simulador</a></li>
-      <li><img href="#">Calculadora</a></li>
-      <li><img href="#">Dúvidas?</a></li>
-    </ul>
-    </nav>
-
-    <div class="header-lista-buttons-box">
-      <ul class="header-lista-buttons">
-        <li><a href="#">Comprar pelo Whats</a></li>
+    <div class="header-menu">
+      <div class="header-menu-logo"></div>
+      <ul>
         <li>
-          <a href="#" class="header-lista-buttons-ancora-1">
-            <img src="{% static 'img/usuario_icon.svg' %}" class="header-lista-imagem-ancora-1" />
-            Entrar ou Registrar
+          <a href="#">
+            <img src="{% static 'img/efeito-decorativos.svg' %}" alt="Efeito Decorativos">
           </a>
         </li>
-        <li>
-          <a href="#" class="header-lista-buttons-ancora-2">
-            <img src="{% static 'img/caminhao-de-mao.svg' %}" class="header-lista-imagem-ancora-2" />
-            Carinho</a>
-        </li>
+        <li><img href="#">Simulador</a></li>
+        <li><img href="#">Calculadora</a></li>
+        <li><img href="#">Dúvidas?</a></li>
+      </ul>
+      </nav>
+
+      <div class="header-lista-buttons-box">
+        <ul class="header-lista-buttons">
+          <li><a href="#">Comprar pelo Whats</a></li>
+          <li>
+            <a href="#" class="header-lista-buttons-ancora-1">
+              <img src="{% static 'img/usuario_icon.svg' %}" class="header-lista-imagem-ancora-1" />
+              Entrar ou Registrar
+            </a>
+          </li>
+          <li>
+            <a href="#" class="header-lista-buttons-ancora-2">
+              <img src="{% static 'img/caminhao-de-mao.svg' %}" class="header-lista-imagem-ancora-2" />
+              Carinho</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header> -->
+
+  <header>
+    <div class="d-flex flex-wrap justify-content-center py-3">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="{% static 'img/whatsapp_icon.svg' %}" />
+        <p class="">Atendimento WhatsApp</p>
+      </a>
+
+      <ul class="nav">
+        <i></i>
+        <div class="header-dropdown-cidade">
+          <form method="post">{% csrf_token %} {{ cidadeForms.as_p }}</form>
+        </div>
       </ul>
     </div>
-  </div>
-</header>
 
+    <!-- <div class="d-flex">
+      <div class="header-whats">
+        <i></i>
+        <p class="text-header-whats">Atendimento WhatsApp</p>
+        <div class="header-dropdown-cidade">
+          <form method="post">{% csrf_token %} {{ cidadeForms.as_p }}</form>
+        </div>
+      </div> -->
 
-<!-- <main class="container-main">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <img src="{% static 'img/logo_pintow.svg' %}" />
+        </a>
+
+        <ul class="nav col-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-dark">Produtos</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Simulador</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Calculadora</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Dúvidas?</a></li>
+        </ul>
+        <ul class="nav col-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2">Comprar pelo Whats</a></li>
+          <li>
+            <a href="#" class="nav-link px-2">
+              <img src="{% static 'img/usuario_icon.svg' %}" class="header-lista-imagem-ancora-1" />
+              Entrar ou Registrar
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-2">
+              <img src="{% static 'img/caminhao-de-mao.svg' %}" class="header-lista-imagem-ancora-2" />
+              Carinho</a>
+          </li>
+        </ul>
+      </div>
+  </header>
+  <!-- <main class="container-main">
   <section class="container-main-section-cor"></section>
 
   <section class="container-main-barra-option">
@@ -62,200 +110,156 @@
       </ul>
     </nav>
   </section>
-</main> -->]
-<div class="container">
-  <footer class="row py-5 my-5 border-top">
-      <div class="col">
-        <h5 style="font-family: Montserrat; font-style: normal; font-weight: 500; font-size: 18px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Atendimento</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Acompanhar Pedido</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Perguntas Frequentes</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Atendimento pelo WhatsApp</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Compre pelo Instagram</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Tudo sobre nossas Tintas</a></li>
-        </ul>
-      </div>
-
-      <div class="col">
-        <h5>Como Trabalhamos</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Como Comprar</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Pagamento</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Termos e condições de uso do site</a>
-          </li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Entrega</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Troca e devolução</a></li>
-        </ul>
-      </div>
-
-      <div class="col ">
-        <h5>Pintow para Você</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Compra Planejada</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Ofertas Especiais</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Pacote Reforma</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Lojas Parceiras</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Arquiteto Pintow</a></li>
-        </ul>
-      </div>
-
-      <div class="col">
-        <h5 >Institucional</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Sobre a Pintow</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Nossa Experiência</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Imprensa</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Lojas Parceiras</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Ranking</a></li>
-        </ul>
-      </div>
-
-      <div class="col">
-        <h5>Cartelas</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Pisos</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Esmaltes</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Texturas</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Tintas</a></li>
-          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-muted">Cartela Colors 20</a></li>
-        </ul>
-      </div>
-      <!-- <div class="col">
-      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-        <img src="{% static 'img/logo pintow2.png' %}" alt="Pintow" class="img-fluid " style="max-width: 60%" />
-      </a>
-      <p class="text-muted">© 2021</p>
-    </div> -->
-  </footer>
-</div>
-<!-- <footer class="row row-cols-5 py-5 my-5">
-      <div class="col">
-        <strong
-          style="font-family: Montserrat; font-style: normal; font-weight: 500; font-size: 18px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Atendimento</strong>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 15px;
-          line-height: 20px;
-          letter-spacing: -0.015em;
-          color: #38433F;" href="#">
-          <p>Acompanhar pedido</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Perguntas frequentes</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Atendimento pelo WhatsApp</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Compre pelo instagram</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Tudo sobre nossas tintas</p>
-        </a>
-      </div>
-      <div class="col">
-        <strong>Como Trabalhamos</strong>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Como Trabalhamos</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Pagamento</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Termos e condições de uso do site</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Entrega</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Troca e devolução</p>
-        </a>
-      </div>
-      <div class="col">
-        <strong>Pintow para Você</strong>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Compra Planejada</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Ofertas Especiais</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Pacote Reforma</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Lojas Parceiras</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Arquiteto Pintow</p>
-        </a>
-      </div>
-      <div class="col">
-        <strong>Institucional</strong>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Sobre a Pintow</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Nossa Experiência</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Imprensa</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Lojas Parceiras</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Ranking</p>
-        </a>
-      </div>
-      <div class="col">
-        <strong>Cartelas</strong>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Cartela Pisos</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Cartela Esmaltes</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Cartela Texturas</p>
-        </a>
-
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Cartela Tintas</p>
-        </a>
-        <a class="link-dark text-decoration-none" style="font-family: Montserrat;" href="#">
-          <p>Cartela Colors 20</p>
-        </a>
-      </div>
+</main> -->
+  <footer class="row py-5 my-5">
+    <hr />
+    <div class="col">
+      <strong
+        style="font-family: Montserrat; font-style: normal; font-weight: bolder; font-size: 18px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">
+        Atendimento</strong>
+      <ul class="nav  py-3">
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Acompanhar
+            Pedido</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Perguntas
+            Frequentes</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Atendimento
+            pelo WhatsApp</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Compre
+            pelo Instagram</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Tudo
+            sobre nossas Tintas</a></li>
+      </ul>
     </div>
 
-    <div class="py-4" style="display: inline-block; position: relative; width: 100%">
-      <hr />
+    <div class="col">
+      <strong
+        style="font-family: Montserrat; font-style: normal; font-weight: bolder; font-size: 18px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">
+        Como Trabalhamos</strong>
+      <ul class="nav flex-column py-3">
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Como
+            Comprar</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Pagamento</a>
+        </li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Termos
+            e condições de uso</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Entrega</a>
+        </li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Troca
+            e devolução</a></li>
+      </ul>
+    </div>
 
-      <a href="#navbar" style="position: absolute; top: 50%; right: 50%; transform: translateY(-50%) translateX(50%);">
+    <div class="col">
+      <strong
+        style="font-family: Montserrat; font-style: normal; font-weight: bolder; font-size: 18px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">
+        Pintow para Você</strong>
+      <ul class="nav flex-column py-3">
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Compra
+            Planejada</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Ofertas
+            Especiais</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Pacote
+            Reforma</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Lojas
+            Parceiras</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Arquiteto
+            Pintow</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <strong
+        style="font-family: Montserrat; font-style: normal; font-weight: bolder; font-size: 18px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">
+        Institucional</strong>
+      <ul class="nav flex-column py-3">
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Sobre
+            a Pintow</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Nossa
+            Experiência</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Imprensa</a>
+        </li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Lojas
+            Parceiras</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Ranking</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <strong
+        style="font-family: Montserrat; font-style: normal; font-weight: bolder; font-size: 18px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">
+        Cartelas</strong>
+      <ul class="nav flex-column py-3">
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Cartela
+            Pisos</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Cartela
+            Esmaltes</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Cartela
+            Texturas</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Cartela
+            Tintas</a></li>
+        <li class="nav-item mb-3"><a href="#" class="link-dark text-decoration-none"
+            style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: -0.015em; color: #38433F;">Cartela
+            Colors 20</a></li>
+      </ul>
+    </div>
+
+    <div style=" position: relative; width: 100%; padding-right: 0px;padding-left: 0px;">
+      <hr />
+      <a href="#" style="position: absolute; top: 50%; right: 50%; transform: translateY(-50%) translateX(50%);">
         <img src="{% static 'img/seta_topo.png' %}" alt="Botão topo" />
       </a>
     </div>
 
     <div class="row align-items-end">
-      <div class="col-md-4">
-        <strong>Forma de pagamento</strong>
-        <br>
-        <img src="{% static 'img/pagamento_credito.png' %}" alt="Pagamento Crédito" class="img-fluid" />
-        <img src="{% static 'img/pagamento_boleto.png' %}" alt="Pagamento Boleto" class="img-fluid" />
+      <div class="col-md-4 mb-0">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><strong>Forma de pagamento</strong></li>
+          <li>
+            <img src="{% static 'img/pagamento_credito.png' %}" alt="Pagamento Crédito" class="img-fluid" />
+            <img src="{% static 'img/pagamento_boleto.png' %}" alt="Pagamento Boleto" class="img-fluid" />
+          </li>
+        </ul>
       </div>
-      <div class="col-md-4">
-        <strong>Compra segura</strong>
-        <br>
-        <img src="{% static 'img/compra_segura.png' %}" alt="Compra segura" />
+      <div class="col-md-4 mb-0">
+        <ul class="nav flex-column py-3">
+          <li><strong>Compra segura</strong></li>
+          <li><img src="{% static 'img/compra_segura.png' %}" alt="Compra segura" /></li>
+        </ul>
       </div>
-      <div class="col-md-3">
-        <br>
-        <img src="{% static 'img/logo pintow2.png' %}" alt="Pintow" class="img-fluid " style="max-width: 60%" />
+      <div class="col-md-4 mb-0">
+        <ul class="nav flex-column py-3">
+          <li><img src="{% static 'img/logo pintow2.png' %}" alt="Pintow" class="img-fluid " style="max-width: 60%;" />
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</footer> -->
+  </footer>
+</div>
 {% endblock %}
 <!-- Bloco que adiciona o envio de formulario ao escolher uma cidade -->
 {% block extra_media %}
