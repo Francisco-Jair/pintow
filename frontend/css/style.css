@@ -1,0 +1,33 @@
+.color-texto {
+  color: #b89b9b !important;
+}
+
+.font-whats-botao {
+  font-size: 13px;
+}
+
+.font-texto {
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* .select-cidades {} */
+
+.select-cidades label {
+  background-color: white;
+  border-radius: 7px;
+}
+
+.select-cidades span {
+  color: #b89b9b;
+  padding-left: 5px;
+}
+
+.select-cidades select {
+  color: #8c71c5;
+  border: none;
+  border-radius: 7px;
+}
+
+.formatando-label-select {
+  font-size: 13px;
+}

@@ -1,9 +1,47 @@
-{% extends "base.html" %} 
-{% load static %} 
+{% extends "base.html" %} {% load static %} {% block content %}
+<header>
+  <!-- Primeira barra de notificação -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand color-texto font-texto font-whats-botao ms-5" href="#">
+        <img
+          src="{% static 'img/whatsapp_icon.svg' %}"
+          alt="ìcone do WhatsApp"
+          width="18"
+          height="18"
+          class="d-inline-block align-text-top"
+        />
+        Atendimento WhatsApp
+      </a>
 
-{% block content %}
+      <div class="select-cidades">
+        <form class="form-inline">
+          {% csrf_token %}
+          <div class="form-group mb-2 formatando-label-select">
+            <label class="me-5" for="id_cidades">
+              <span>Preços válidos para:</span>
+              <select name="cidades" class="custom-select" id="id_cidades">
+                {% for choice in cidadeForms.cidades %} {{choice}} {% endfor %}
+              </select>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
 
+<main></main>
+
+<footer></footer>
 
 {% endblock %}
 
-
+<!-- <div class="form-group mb-2 formatando-label-select">
+            <label class="formatando-label" for="id_cidades">Preços válidos para:</label>
+            <select name="cidades" class="formatando-select"  id="id_cidades">
+              {% for choice in cidadeForms.cidades %}
+              <!-- <option value={{choice.pk}}>{{choice.pk}}</option> posso usar os options para montar tb-->
+              {{choice}} {% endfor %}
+            </select>
+         </div> -->
