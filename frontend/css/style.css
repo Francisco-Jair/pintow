@@ -75,3 +75,59 @@
   height: 500px;
   background: #2f72a3;
 }
+
+.buttons-imagens-icons {
+  margin-top: 5rem !important;
+}
+
+.buttons-imagens-icons a {
+  padding-top: 9rem !important;
+  margin-left: 4rem !important;
+  font-size: 12px;
+  color: black;
+}
+
+.icon-imagens-1 {
+  background-image: url("../img/efeitos_decorativos.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 15px;
+}
+
+.icon-imagens-2 {
+  background-image: url("../img/pa_massa.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 15px;
+  padding: 2.5rem;
+}
+
+.icon-imagens-3 {
+  background-image: url("../img/casa_externa.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 15px;
+  padding: 2.5rem;
+}
+
+.icon-imagens-4 {
+  background-image: url("../img/pincel.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 15px;
+  padding: 2.5rem;
+}
+
+.icon-imagens-5 {
+  background-image: url("../img/cadeira_esmalte.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 15px;
+  padding: 2.5rem;
+}
+
+.icon-imagens-6 {
+  background-image: url("../img/verniz_icon.svg");
+  background-repeat: no-repeat;
+  background-position: -16px 15px;
+  padding: 2.5rem;
+}
+
+.size-paragrafo {
+  font-size: 24px;
+}
