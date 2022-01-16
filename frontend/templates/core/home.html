@@ -3,7 +3,10 @@
   <!-- Primeira barra de notificação -->
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand color-texto font-texto font-whats-botao ms-5" href="#">
+      <a
+        class="navbar-brand color-texto font-texto font-whats-botao ms-5"
+        href="#"
+      >
         <img
           src="{% static 'img/whatsapp_icon.svg' %}"
           alt="ìcone do WhatsApp"
@@ -29,9 +32,81 @@
       </div>
     </div>
   </nav>
+
+  <!-- Segunda navBar -->
+  <nav class="navbar navbar-expand-lg navbar-light mt-3 mb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5" href="#">
+        <img
+          src="{% static 'img/logo_pintow.svg' %}"
+          alt="Logo da empresa Pintow"
+          width="161"
+          height="54"
+        />
+      </a>
+
+      <!-- Botão Hamburguer para responsividade -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu-nav-bar"
+        aria-controls="menu-nav-bar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse espaco-do-menu-de-selecao"
+        id="menu-nav-bar"
+      >
+        <ul
+          id="lista-itens-navbar"
+          class="navbar-nav me-auto mb-2 mb-lg-0 font-texto-menu"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Simulador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Calculadora</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Dúvidas?</a>
+          </li>
+        </ul>
+
+        <!-- Buttons menu navbar -->
+        <div class="button-grupo me-5">
+          <a href="#" class="btn font-texto-menu cor-botao-menu p-3"
+            >Comprar pelo Whats</a
+          >
+          <a href="#" class="btn font-texto-menu cor-botao-menu p-3 icon-user">
+            Entrar ou Registrar</a
+          >
+          <a
+            href="#"
+            class="btn font-texto-menu cor-botao-menu p-3 icon-carinho"
+          >
+            Carinho</a
+          >
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>
 
-<main></main>
+<main class="principal">
+
+  <section class="section-1">
+
+  </section>
+
+</main>
 
 <footer></footer>
 

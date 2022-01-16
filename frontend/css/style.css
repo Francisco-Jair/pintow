@@ -31,3 +31,47 @@
 .formatando-label-select {
   font-size: 13px;
 }
+
+.espaco-do-menu-de-selecao {
+  margin-left: 4rem !important;
+}
+
+#lista-itens-navbar li {
+  margin: 0 2rem 0 2rem;
+}
+
+.font-texto-menu {
+  font-family: "Montserrat", sans-serif;
+}
+
+.cor-botao-menu {
+  color: #18a0fb;
+  font-size: 12px;
+  /* border-color: #18a0fb; */
+  border: 1px solid #18a0fb;
+}
+
+.icon-user {
+  background-image: url("../img/usuario_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 9px;
+  padding-left: 2.2rem !important;
+}
+
+.icon-carinho {
+  background-image: url("../img/caminhao-de-mao.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 9px;
+  padding-left: 2.7rem !important;
+}
+
+.button-grupo a {
+  margin-left: 1rem !important;
+  border-radius: 7px;
+}
+
+.section-1 {
+  width: 100%;
+  height: 500px;
+  background: #2f72a3;
+}
