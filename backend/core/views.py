@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
-from backend.core.models import Cidades
+from backend.core.models import Cidade
 from backend.core.forms import CidadeForms
 
 def home(request):
+    """Função que comanda a página inicial"""
 
     if request.method == "POST":
         form = CidadeForms(request.POST)
@@ -16,6 +17,7 @@ def home(request):
     else:
         formulario = CidadeForms()
 
+    
     context = {
         "title" : "Pitow - Home",
         # "cidades" : Cidades.objects.all(),
@@ -23,3 +25,8 @@ def home(request):
     }
 
     return render(request, 'core/home.html', context)
+
+
+def escolher_cidade(request):
+    """Função que muda a cidade e com isso os itens"""
+    pass
