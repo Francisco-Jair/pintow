@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from backend.core.models import Cidade
 from backend.core.forms import CidadeForms
 
 def home(request):
@@ -16,11 +15,9 @@ def home(request):
         formulario = CidadeForms()
     else:
         formulario = CidadeForms()
-
     
     context = {
         "title" : "Pitow - Home",
-        # "cidades" : Cidades.objects.all(),
         "cidadeForms" : formulario
     }
 

@@ -6,6 +6,9 @@ class Cidade(models.Model):
     estado = models.CharField("Estado", max_length=20)
     siglaEstado = models.CharField("Sigla do Estado", max_length=3)
 
+    def __str__(self):
+        """Como esse dado vai ser apresentado"""
+        return (f"{self.cidade}-{self.siglaEstado}")
 
 class Cor(models.Model):
     pass

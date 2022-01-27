@@ -22,10 +22,10 @@
           {% csrf_token %}
           <div class="form-group mb-2 formatando-label-select">
             <label class="me-5" for="id_cidades">
-              <span>Preços válidos para:</span>
-              <select name="cidades" class="custom-select" id="id_cidades">
-                {% for choice in cidadeForms.cidades %} {{choice}} {% endfor %}
-              </select>
+              <!-- <span>Preços válidos para:</span> -->
+              <div class="cor-label-text">
+                {{ cidadeForms }}
+              </div>
             </label>
           </div>
         </form>

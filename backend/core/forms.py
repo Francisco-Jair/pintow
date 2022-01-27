@@ -9,7 +9,8 @@ class CidadeForms(forms.ModelForm):
     # def __init__(self, *arg, **kwargs):
     #     self.fields["cidades"].label = "Preços válidos para:"
 
-    cidade = forms.ChoiceField(label="Preços válidos para", choices=[(esc.id, esc.cidade + " - " + esc.siglaEstado) for esc in list(Cidade.objects.all())], initial='3', widget  =  forms.Select(attrs={'class' : 'form-select form-select-sm'}) )
+    # cidade = forms.ChoiceField(label="Preços válidos para", choices=[(esc.id, esc.cidade + " - " + esc.siglaEstado) for esc in list(Cidade.objects.all())], initial='3', widget  =  forms.Select(attrs={'class' : 'form-select form-select-sm'}) )
+    cidade = forms.ModelChoiceField(Cidade.objects.all(), empty_label="VAZIO", label="Preços válidos para:")
 
     class Meta:
         model = Cidade
