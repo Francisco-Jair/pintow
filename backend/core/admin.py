@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Atributo, CategoriaPaleta, CategoriaCor, CategoriaComodo, Cidade, Cor, Comodo, Embalagem, Estado
 
-# Register your models here.
 admin.site.register(Atributo)
 admin.site.register(CategoriaPaleta)
 admin.site.register(CategoriaCor)
