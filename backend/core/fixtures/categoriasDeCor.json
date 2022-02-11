@@ -1,0 +1,242 @@
+[
+    {
+        "model": "core.atributo",
+        "pk": 1,
+        "fields": {
+            "nomeDaCor": "Amarelos",
+            "codigoDaCor": "#F7BF53",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"1"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 2,
+        "fields": {
+            "nomeDaCor": "Amarelos",
+            "codigoDaCor": "#F7BF53",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 3,
+        "fields": {
+            "nomeDaCor": "Azuis",
+            "codigoDaCor": "#4BB6E8",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"1"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 4,
+        "fields": {
+            "nomeDaCor": "Azuis",
+            "codigoDaCor": "#4BB6E8",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 5,
+        "fields": {
+            "nomeDaCor": "Branco",
+            "codigoDaCor": "#FAF9F4",
+            "corDoTexto":"#000000",
+            "categoriaDaCor":"1"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 6,
+        "fields": {
+            "nomeDaCor": "Cinza",
+            "codigoDaCor": "#A7A6AE",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 7,
+        "fields": {
+            "nomeDaCor": "Cinza",
+            "codigoDaCor": "#A7A6AE",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"1"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 8,
+        "fields": {
+            "nomeDaCor": "Marrom",
+            "codigoDaCor": "#544535",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 9,
+        "fields": {
+            "nomeDaCor": "Marrons",
+            "codigoDaCor": "#76212D",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"1"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 10,
+        "fields": {
+            "nomeDaCor": "Neutros",
+            "codigoDaCor": "#EDE8DD",
+            "corDoTexto":"#000000",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 11,
+        "fields": {
+            "nomeDaCor": "Off white",
+            "codigoDaCor": "#EBEBEB",
+            "corDoTexto":"#000000",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 12,
+        "fields": {
+            "nomeDaCor": "Preto",
+            "codigoDaCor": "#000000",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 13,
+        "fields": {
+            "nomeDaCor": "Preto",
+            "codigoDaCor": "#000000",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"1"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 14,
+        "fields": {
+            "nomeDaCor": "Roxos e Violetas",
+            "codigoDaCor": "#674A8A",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 15,
+        "fields": {
+            "nomeDaCor": "Roxos e Violetas",
+            "codigoDaCor": "#674A8A",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"1"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 16,
+        "fields": {
+            "nomeDaCor": "Terrosos",
+            "codigoDaCor": "#856E66",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 17,
+        "fields": {
+            "nomeDaCor": "Verdes",
+            "codigoDaCor": "#5F8057",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"1"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 18,
+        "fields": {
+            "nomeDaCor": "Verdes",
+            "codigoDaCor": "#5F8057",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 19,
+        "fields": {
+            "nomeDaCor": "Vermelhos",
+            "codigoDaCor": "#990008",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"1"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaCor",
+        "pk": 20,
+        "fields": {
+            "nomeDaCor": "Vermelhos",
+            "codigoDaCor": "#990008",
+            "corDoTexto":"#FFFFFF",
+            "categoriaDaCor":"2"
+
+        }
+    }
+
+]

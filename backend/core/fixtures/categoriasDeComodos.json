@@ -1,0 +1,56 @@
+[
+    {
+        "model": "core.CategoriaComodo",
+        "pk": 1,
+        "fields": {
+            "nome": "Banheiros",
+            "codigoDaCor": "#8AE84B",
+            "iconeNome":"bathroom2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaComodo",
+        "pk": 2,
+        "fields": {
+            "nome": "Cozinhas",
+            "codigoDaCor": "#4BB6E8",
+            "iconeNome":"kitchen2"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaComodo",
+        "pk": 3,
+        "fields": {
+            "nome": "Externos",
+            "codigoDaCor": "#CC4BE8",
+            "iconeNome":"external"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaComodo",
+        "pk": 4,
+        "fields": {
+            "nome": "Quartos",
+            "codigoDaCor": "#F4C15F",
+            "iconeNome":"bed"
+
+        }
+    },
+
+    {
+        "model": "core.CategoriaComodo",
+        "pk": 5,
+        "fields": {
+            "nome": "Salas",
+            "codigoDaCor": "#DF6A6A",
+            "iconeNome":"sofa"
+
+        }
+    }
+]

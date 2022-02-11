@@ -1,0 +1,43 @@
+[
+    {
+        "model": "core.atributo",
+        "pk": 1,
+        "fields": {
+            "nome": "Esmalte"
+        }
+    },
+
+    {
+        "model": "core.atributo",
+        "pk": 2,
+        "fields": {
+            "nome": "Complemento"
+        }
+    },
+
+    {
+        "model": "core.atributo",
+        "pk": 3,
+        "fields": {
+            "nome": "Vernizes"
+        }
+    },
+
+    {
+        "model": "core.atributo",
+        "pk": 4,
+        "fields": {
+            "nome": "Texturas"
+        }
+    },
+
+    {
+        "model": "core.atributo",
+        "pk": 5,
+        "fields": {
+            "nome": "Acabamento"
+        }
+    }
+
+
+]
