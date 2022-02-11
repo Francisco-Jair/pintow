@@ -50,12 +50,10 @@ class Cor(models.Model):
     CodigoDaCor = models.CharField("Código", max_length=20)
     # Relacionamento com Categoria de cor
 
-
     class Meta():
         """Nome do modelo no admin"""
         verbose_name = 'Cor'
         verbose_name_plural = 'Cores'
-        # ordering = ['nome']
 
 
 class Comodo(models.Model):
