@@ -1,0 +1,19 @@
+[
+    {
+        "model" : "core.estado",
+        "pk": 1,
+        "fields" : {
+            "estado": "Acre",
+            "siglaEstado": "AC"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 2,
+        "fields" : {
+            "estado": "Alagoas",
+            "siglaEstado": "AL"
+        }
+    }
+]
