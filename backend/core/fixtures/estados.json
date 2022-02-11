@@ -15,5 +15,231 @@
             "estado": "Alagoas",
             "siglaEstado": "AL"
         }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 3,
+        "fields" : {
+            "estado": "Amapá",
+            "siglaEstado": "AP"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 4,
+        "fields" : {
+            "estado": "Amazonas",
+            "siglaEstado": "AM"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 5,
+        "fields" : {
+            "estado": "Bahia",
+            "siglaEstado": "BA"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 6,
+        "fields" : {
+            "estado": "Ceará",
+            "siglaEstado": "CE"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 7,
+        "fields" : {
+            "estado": "Distrito Federal",
+            "siglaEstado": "DF"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 8,
+        "fields" : {
+            "estado": "Espírito Santo",
+            "siglaEstado": "ES"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 9,
+        "fields" : {
+            "estado": "Goiás",
+            "siglaEstado": "GO"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 10,
+        "fields" : {
+            "estado": "Maranhão",
+            "siglaEstado": "MA"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 11,
+        "fields" : {
+            "estado": "Mato Grosso",
+            "siglaEstado": "MT"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 12,
+        "fields" : {
+            "estado": "Mato Grosso do Sul",
+            "siglaEstado": "MS"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 13,
+        "fields" : {
+            "estado": "Minas Gerais",
+            "siglaEstado": "MG"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 14,
+        "fields" : {
+            "estado": "Pará",
+            "siglaEstado": "PA"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 15,
+        "fields" : {
+            "estado": "Paraíba",
+            "siglaEstado": "PB"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 16,
+        "fields" : {
+            "estado": "Paraná",
+            "siglaEstado": "PR"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 17,
+        "fields" : {
+            "estado": "Pernambuco",
+            "siglaEstado": "PE"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 18,
+        "fields" : {
+            "estado": "Piauí",
+            "siglaEstado": "PI"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 19,
+        "fields" : {
+            "estado": "Rio de Janeiro",
+            "siglaEstado": "RJ"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 20,
+        "fields" : {
+            "estado": "Rio Grande do Norte",
+            "siglaEstado": "RN"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 21,
+        "fields" : {
+            "estado": "Rio Grande do Sul",
+            "siglaEstado": "RS"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 22,
+        "fields" : {
+            "estado": "Rondônia",
+            "siglaEstado": "RO"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 23,
+        "fields" : {
+            "estado": "Roraima",
+            "siglaEstado": "RR"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 24,
+        "fields" : {
+            "estado": "Santa Catarina",
+            "siglaEstado": "SC"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 25,
+        "fields" : {
+            "estado": "São Paulo",
+            "siglaEstado": "SP"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 26,
+        "fields" : {
+            "estado": "Sergipe",
+            "siglaEstado": "SE"
+        }
+    },
+
+    {
+        "model" : "core.estado",
+        "pk": 27,
+        "fields" : {
+            "estado": "Tocantins",
+            "siglaEstado": "TO"
+        }
     }
+
 ]
